@@ -1,0 +1,131 @@
+html{
+ height: 100%;
+ width: 100%;
+}
+
+body {
+  background-color: #F8F3BC;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header.row {
+  display: flex;
+  align-items: right;
+}
+
+footer.containter-fluid {
+  display: flex;
+  align-items: right;
+}
+
+h1 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'EB Garamond', serif;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a.contact-button {
+  padding: 0 20px;
+  margin: 0;
+  font-size: 24px;
+  font-family: 'EB Garamond', serif;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url(Jumbotron_Image.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  height: 400px;
+ }
+
+.jumbotron h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+}
+
+.jumbotron h3 {
+  font-family: 'EB Garamond', serif;
+  margin: 0 0 20px;
+  color: #ffffff;
+}
+
+div.container-fluid{
+  margin-bottom: 90px;
+}
+
+div.container-fluid-about {
+  margin-top: 75px;
+}
+
+div.col-sm-1 {
+  margin-left: 0.33%;
+  margin-right: 0.33%;
+}
+
+div.col-sm-4 {
+  text-align: center;
+}
+
+div.col-sm-8 {
+  padding-right: 10%;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+p.footer-caption {
+  font-family: 'EB Garamond', serif;
+  font-weight: 1000;
+  font-size: 25px;
+  margin-right: 13%;
+}
+
+p.headshot-description {
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0;
+  border: 0;
+  margin-bottom: -15px;
+  margin-top: 0px;
+}
+
+.btn.btn-outline-link:hover {
+  color: #ffffff;
+  background-color: #add8e6;
+}
+
+img.professional-headshot {
+  border-radius: 50%;
+}
+
+hr { 
+  background-color: #d73e39
+}
