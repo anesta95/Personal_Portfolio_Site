@@ -50,6 +50,10 @@ a.contact-button {
   font-family: 'EB Garamond', serif;
 }
 
+a.article-links {
+  color: #007bff;
+}
+
 .jumbotron {
   display: flex;
   align-items: center;
@@ -82,6 +86,16 @@ div.container-fluid-about {
   margin-top: 75px;
 }
 
+div.col-sm-12-blog-content {
+  align-items: center;
+  text-align: center;
+}
+
+div.col-sm-12-photo-content {
+  align-items: center;
+  text-align: center;
+}
+
 div.col-sm-1 {
   margin-left: 0.33%;
   margin-right: 0.33%;
@@ -93,6 +107,15 @@ div.col-sm-4 {
 
 div.col-sm-8 {
   padding-right: 10%;
+}
+
+div.blog-body-content {
+  padding-right: 10%;
+}
+
+div.photos-body-content {
+  align-items: center;
+  text-align: center;
 }
 
 footer {
@@ -124,6 +147,13 @@ p.headshot-description {
 
 img.professional-headshot {
   border-radius: 50%;
+}
+
+img.Vision-Zero-Image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
 
 hr { 
