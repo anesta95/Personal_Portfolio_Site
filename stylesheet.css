@@ -110,7 +110,8 @@ div.col-sm-8 {
 }
 
 div.blog-body-content {
-  padding-right: 10%;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 div.photos-body-content {
