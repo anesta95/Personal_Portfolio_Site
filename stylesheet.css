@@ -169,6 +169,15 @@ img.Blog-Image {
   height: auto;
 }
 
+img.blogThumbnail {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+}
+
 hr { 
   background-color: #d73e39
 }
