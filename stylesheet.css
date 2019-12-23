@@ -174,7 +174,7 @@ img.blogThumbnail {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 750px;
+  max-width: 500px;
   height: auto;
 }
 
@@ -188,5 +188,4 @@ iframe {
   margin-right: auto;
   width: 100%;
   max-width: 750px;
-  height: auto;
 }
