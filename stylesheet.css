@@ -178,6 +178,24 @@ img.blogThumbnail {
   height: auto;
 }
 
+img.photosThumbnail {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+img.sunsetPhotos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+
 hr { 
   background-color: #d73e39
 }
@@ -188,4 +206,33 @@ iframe {
   margin-right: auto;
   width: 100%;
   max-width: 750px;
+}
+
+.carousel-caption{
+  margin-top: 200px;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: #007bff;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #007bff;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #007bff;
 }
