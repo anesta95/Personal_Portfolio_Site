@@ -78,6 +78,10 @@ a {
   color: #ffffff;
 }
 
+#jumbotron-caption {
+  margin-bottom: 120px;
+}
+
 div.container-fluid{
   margin-bottom: 90px;
 }
@@ -160,7 +164,9 @@ img.Blog-Image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
 }
 
 hr { 
@@ -171,4 +177,7 @@ iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
 }

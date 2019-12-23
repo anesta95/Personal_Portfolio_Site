@@ -1,66 +1,115 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Sunsets</title>
-        
-        <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="../stylesheet.css">
-        
-        
-    </head>
+<html lang="en-us">
+  <head>
+    <title>Sunsets</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+  </head>
     <body>
-        <header class="container-fluid">
-            <div class="row">
-              <h1 class="col-sm-4">Sunsets</h1>
-              <nav class="col-sm-8 text-right">
-                <a href="../blog.html" class="btn btn-outline-link btn-lg active">Blog</a>  
-                <a href="../index.html" class="btn btn-outline-link btn-lg active">Home</a>
-                <a href="../about.html" class="btn btn-outline-link btn-lg active">About Me</a>
-                <a href="../photos.html" class="btn btn-outline-link btn-lg active">Pictures</a>
-              </nav>
+        <nav class="navbar navbar-expand-md py-3">
+            <div class="container">
+              <h1>Sunsets</h1>
+              <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSunsets" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+              </button>
+      
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSunsets">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="../blog.html" class="btn btn-outline-link btn-lg active">Blog<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a href="../index.html" class="btn btn-outline-link btn-lg active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../about.html" class="btn btn-outline-link btn-lg active">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../photos.html" class="btn btn-outline-link btn-lg active">Pictures</a>
+                    </li>
+                  </ul>
+                </div>
             </div>
-        </header>
+          </nav>
         <hr>
-        <div class="photos-body-content">
-            <img src="Bladensburg_Waterfront.jpg">
-            <p>Bladensburg Waterfront, Bladensburg Maryland</p>
-        </div>
-        <div class="photos-body-content">
-            <img src="Crystal_Pier.jpg">
-            <p>Crystal Pier, San Diego California</p>
-        </div>
-        <div class="photos-body-content">
-            <img src="Downtown_LaJolla.jpg">
-            <p>Top of the Grande Colonial Hotel, La Jolla California</p>
-        </div>
-        <div class="photos-body-content">
-            <img src="Gallery_Place.jpg">
-            <p>Gallery Place, Washington DC</p>
-        </div>
-        <div class="photos-body-content">
-            <img src="Glider_Port.jpg">
-            <p>Torrey Pines Glider Port, San Diego California</p>
-        </div>
-        <div class="photos-body-content">
-            <img src="Key_Bridge.jpg">
-            <p>Francis Scott Key Bridge, Washington DC</p>
-        </div>
-        <div class="photos-body-content">
-            <img src="La_Jolla_Shores.jpg">
-            <p>La Jolla Shores Beach, La Jolla California</p>
-        </div>
-        <div class="photos-body-content">
-            <img src="Leonardtown_Chesapeake.jpg">
-            <p>Leonardtown Wharf Park, Leonardtown Maryland</p>
-        </div>
-        <div class="photos-body-content">
-            <img src="Mission_Beach.jpg">
-            <p>Mission Beach, San Diego California</p>
-        </div>
-        <div class="photos-body-content">
-            <img src="Ward_Circle.jpg">
-            <p>Ward Circle, Washington DC</p>
-        </div>
+
+        <div id="carouselSunsets" class="carousel slide w-75 mx-auto" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Bladensburg_Waterfront.jpg" class="d-block w-100">
+                <div class='carousel-caption bg-dark rounded-pill py-0'>
+                    <p class="font-weight-bold text-center text-white">Bladensburg Waterfront, Bladensburg Maryland</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Crystal_Pier.jpg" class="d-block w-100">
+                <div class='carousel-caption bg-dark rounded-pill py-0'>
+                    <p class="font-weight-bold text-center text-white">Crystal Pier, San Diego California</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Downtown_LaJolla.jpg" class="d-block w-100">
+                <div class='carousel-caption bg-dark rounded-pill py-0'>
+                    <p class="font-weight-bold text-center text-white">Top of the Grande Colonial Hotel, La Jolla California</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Gallery_Place.jpg" class="d-block w-100">
+                <div class='carousel-caption bg-dark rounded-pill py-0'>
+                    <p class="font-weight-bold text-center text-white">Gallery Place, Washington DC</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Glider_Port.jpg" class="d-block w-100">
+                <div class='carousel-caption bg-dark rounded-pill py-0'>
+                    <p class="font-weight-bold text-center text-white">Torrey Pines Glider Port, San Diego California</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Key_Bridge.jpg" class="d-block w-100">
+                <div class='carousel-caption bg-dark rounded-pill py-0'>
+                    <p class="font-weight-bold text-center text-white">Francis Scott Key Bridge, Washington DC</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="La_Jolla_Shores.jpg" class="d-block w-100">
+                <div class='carousel-caption bg-dark rounded-pill py-0'>
+                    <p class="font-weight-bold text-center text-white">La Jolla Shores Beach, La Jolla California</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Leonardtown_Chesapeake.jpg" class="d-block w-100">
+                <div class='carousel-caption bg-dark rounded-pill py-0'>
+                    <p class="font-weight-bold text-center text-white">Leonardtown Wharf Park, Leonardtown Maryland</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Mission_Beach.jpg" class="d-block w-100">
+                <div class='carousel-caption bg-dark rounded-pill py-0'>
+                    <p class="font-weight-bold text-center text-white">Mission Beach, San Diego California</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Ward_Circle.jpg" class="d-block w-100">
+                <div class='carousel-caption bg-dark rounded-pill py-0'>
+                    <p class="font-weight-bold text-center text-white">Ward Circle, Washington DC</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselSunsets" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselSunsets" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>
