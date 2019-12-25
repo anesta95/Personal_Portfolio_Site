@@ -41,6 +41,8 @@ h2 {
 nav {
   display: flex;
   justify-content: flex-end;
+  background-color: #F8F3BC;
+  border-bottom: #d73e39 solid 1px;
 }
 
 a.contact-button {
@@ -84,10 +86,11 @@ a {
 
 div.container-fluid{
   margin-bottom: 90px;
+  margin-top: 120px;
 }
 
 div.container-fluid-about {
-  margin-top: 75px;
+  margin-top: 120px;
 }
 
 div.col-sm-12-blog-content {
@@ -196,10 +199,6 @@ img.sunsetPhotos {
   height: auto;
 }
 
-hr { 
-  background-color: #d73e39
-}
-
 iframe {
   display: block;
   margin-left: auto;
@@ -235,4 +234,13 @@ iframe {
   content: '<';
   font-size: 55px;
   color: #007bff;
+}
+
+#aboutDescription {
+  padding-left: 10px;
+}
+
+#carouselSunsets {
+  margin-top: 120px;
+  padding-bottom: 40px;
 }
