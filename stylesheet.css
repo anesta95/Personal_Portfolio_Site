@@ -238,8 +238,10 @@ iframe {
 }
 
 #aboutDescription {
-  padding-right: 7px;
+  /* padding-right:10px; */
+  padding-left: 25px;
 }
+
 
 #carouselSunsets {
   margin-top: 120px;
