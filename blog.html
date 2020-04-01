@@ -68,7 +68,7 @@
       m = cdt.getMonth() + 1;
       d = cdt.getDate() - 1;
     } else {
-      prvd = cdt.setDate(cdt.getDate() - 1);
+      prvd = new Date(cdt.setDate(cdt.getDate() - 1));
       y = prvd.getFullYear();
       m = prvd.getMonth() + 1;
       d = prvd.getDate();
