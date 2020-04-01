@@ -60,10 +60,23 @@
         </div>
     </div>
   <script>
-    n =  new Date();
-    y = n.getFullYear();
-    m = n.getMonth() + 1;
-    d = n.getDate();
+
+    var cdt = new Date();
+
+    if (cdt.getDate() != 1) {
+      y = cdt.getFullYear();
+      m = cdt.getMonth() + 1;
+      d = cdt.getDate() - 1;
+    } else {
+      prvd = cdt.setDate(cdt.getDate() - 1);
+      y = prvd.getFullYear();
+      m = prvd.getMonth() + 1;
+      d = prvd.getDate();
+    }
+    // n =  new Date();
+    // y = n.getFullYear();
+    // m = n.getMonth() + 1;
+    // d = n.getDate();
     document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
   </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
