@@ -56,20 +56,22 @@
        
         <div class="row d-flex justify-content-center" style="padding-top: 75px;">
           <div class="col-md-6 col-sm-12">
-            <img class = "Blog-Image" src="dmvCasesByCountyBar.png" alt="DMV Covid-19 Cases by County", style="padding-bottom: 10px;">
+            <!-- <img class = "Blog-Image" src="dmvCasesByCountyBar.png" alt="DMV Covid-19 Cases by County", style="padding-bottom: 10px;"> -->
+            <iframe class="covidPlotly" src="dmvCasesByCountyBarPlotlyGraph.html" alt = "DMV Covid-19 Cases & Case Rate by County"></iframe>
           </div>
           <div class="col-md-6 col-sm-12">
-            <img class = "Blog-Image" src="dmvCasesByCountyBarPerCap.png" alt="DMV Covid-19 Case Rate by County per 100k residents">
+            <!-- <img class = "Blog-Image" src="dmvCasesByCountyBarPerCap.png" alt="DMV Covid-19 Case Rate by County per 100k residents"> -->
+            <iframe class="covidPlotly" src="dmvCasesByCountyLinePlotlyGraph.html" alt = "DMV Covid-19 Cases & Case Rate by County over time"></iframe>
           </div>
         </div>
-        <div class="row d-flex justify-content-center" style="padding-top: 75px;">
+        <!-- <div class="row d-flex justify-content-center" style="padding-top: 75px;">
           <div class="col-md-6 col-sm-12">
             <img class = "Blog-Image" src="dmvCasesByCountyLine.png" alt="DMV Covid-19 Cases by County over time", style="padding-bottom: 10px;">
           </div>
           <div class="col-md-6 col-sm-12">
             <img class = "Blog-Image" src="dmvCasesByCountyLinePerCap.png" alt="DMV Covid-19 Case Rate by County over time per 100k residents">
           </div>
-        </div>
+        </div> -->
         <div class="row d-flex justify-content-center" style="padding-top: 50px;">
           <div class="col-sm-12">
           <p>Data on testing and deaths is only reported at the state level by the <a href="https://coronavirus.dc.gov/">DC Government</a>, the <a href="http://www.vdh.virginia.gov/coronavirus/">Virginia Department of Health</a>, and the <a href="https://coronavirus.maryland.gov/">Maryland Department of Health</a>.</p>
@@ -77,27 +79,31 @@
         </div>
         <div class="row d-flex justify-content-center" style="padding-top: 75px;">
           <div class="col-md-6 col-sm-12">
-            <img class = "Blog-Image" src="DMVTestsBar.png" alt="DMV Covid-19 Tests by State", style="padding-bottom: 10px;">
+            <!-- <img class = "Blog-Image" src="DMVTestsBar.png" alt="DMV Covid-19 Tests by State", style="padding-bottom: 10px;"> -->
+            <iframe class="covidPlotly" src="dmvTestsByStateBarPlotlyGraph.html" alt = "DMV Covid-19 Tests & Test Rate by State"></iframe>
           </div>
           <div class="col-md-6 col-sm-12">
-            <img class = "Blog-Image" src="DMVTestsBarPerCap.png" alt="DMV Covid-19 Test Rate by State per 100k residents">
+            <!-- <img class = "Blog-Image" src="DMVTestsBarPerCap.png" alt="DMV Covid-19 Test Rate by State per 100k residents"> -->
+            <iframe class="covidPlotly" src="dmvTestsByStateLinePlotlyGraph.html" alt = "DMV Covid-19 Tests & Test Rate by County over time"></iframe>
           </div>
         </div>
-        <div class="row d-flex justify-content-center" style="padding-top: 75px;">
+        <!-- <div class="row d-flex justify-content-center" style="padding-top: 75px;">
           <div class="col-md-6 col-sm-12">
             <img class = "Blog-Image" src="DMVTestsLine.png" alt="DMV Covid-19 Tests by State over time", style="padding-bottom: 10px;">
           </div>
           <div class="col-md-6 col-sm-12">
             <img class = "Blog-Image" src="DMVTestsLinePerCap.png" alt="DMV Covid-19 Test Rate by state over time per 100k residents">
           </div>
-        </div>
+        </div> -->
 
         <div class="row d-flex justify-content-center" style="padding-top: 75px;">
           <div class="col-md-6 col-sm-12">
-            <img class = "Blog-Image" src="dcmdvaDeathsBar.png" alt="DMV Covid-19 Deaths by State", style="padding-bottom: 10px;">
+            <!-- <img class = "Blog-Image" src="dcmdvaDeathsBar.png" alt="DMV Covid-19 Deaths by State", style="padding-bottom: 10px;"> -->
+            <iframe class="covidPlotly" src="dmvDeathsByStateBarPlotlyGraph.html" alt = "DMV Covid-19 Deaths & Death Rate by County"></iframe>
           </div>
           <div class="col-md-6 col-sm-12">
-            <img class = "Blog-Image" src="dcmdvaDeathsLine.png" alt="DMV Covid-19 Deaths by State over time">
+            <!-- <img class = "Blog-Image" src="dcmdvaDeathsLine.png" alt="DMV Covid-19 Deaths by State over time"> -->
+            <iframe class="covidPlotly" src="dmvDeathsByStateLinePlotlyGraph.html" alt = "DMV Covid-19 Deaths & Death Rate by County over time"></iframe>
           </div>
         </div>
         <div class="row d-flex justify-content-center" style="padding-top: 50px;">
@@ -112,82 +118,7 @@
 </div>
 </div>
 
-<script src="../allPages.js"></script>
-<!-- <script>
-    // Get the modal
-var modal = document.getElementById('modal');
-
-// Get the images and bind an onclick event on each to insert it inside the modal
-// use its "alt" text as a caption
-var images = document.querySelectorAll(".Blog-Image");
-var modalImg = document.getElementById("modalImg");
-var captionText = document.getElementById("captionText");
-for(let i = 0; i < images.length; i++){
-  images[i].onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-
-
-    // // dirty selection
-    // function $(a) {
-    //     switch (a.slice(0,1)) {
-    //         case "#":
-    //             return document.getElementById(a.slice(1));
-    //         default:
-    //             return [].slice.call(document.getElementsByClassName(a.slice(1)));
-    //     }
-    // }
-    // //////////////////////////////////////
-    
-    // // define variables to hold the 'modal' Elements
-    // var modal, modalImg, captionText, close;
-
-    // // Event Handler
-    // function imageClicked(e) {
-    //    // set modal Elements on first click
-    //    !modal && (
-    //         modal = $("#modal"),
-    //         modalImg = $("#modalImg"),
-    //         captionText = $("#captionText"),
-    //         // find the 'close' button and 
-    //         // add an event listener
-    //         close = $("#close"),
-    //         close.addEventListener("click", closeModal, !1)
-    //     );
-
-    //     // the clicked image
-    //     var clickedImage = e.target;
-
-    //     // set the Elements in the 'modal' box
-    //     modalImg.src = clickedImage.src;
-    //     captionText.textContent = clickedImage.alt;
-    //     modal.style.display = "block";
-    // }
-
-    // // Event Handler
-    // function closeModal(e) {
-    //     modal.style.display = "none";
-    // }
-
-    // // Finally, add an event listener to
-    // // every image with a class .clickable
-    // $(".Blog-Image").forEach(function(im) {
-    //     im.addEventListener("click", imageClicked, !1);
-    // });
-
-</script> -->
+<script src="allPages.js"></script>
 <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
