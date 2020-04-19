@@ -45,6 +45,10 @@
           <div id="captionText"></div>
         </div>
 
+        <!-- <div class = "covidContainer" id="dmvChloroplethMap">
+          
+        </div> -->
+
         <div class="row d-flex justify-content-center" style="padding-top: 50px;">
           <div class="col-sm-12">
             <iframe src="dmvChloropleth.html", style="border: 0; width:100%; height: 500px; overflow: auto; margin-bottom: 75px;"></iframe>
@@ -53,6 +57,17 @@
             <iframe src="dmvChloroplethPerCap.html", style="border: 0; width:100%; height: 500px; overflow: auto;"></iframe>
           </div> -->
         </div>
+
+
+        <!-- <div class = "covidContainer" id = "casesByCountyBarGraph">
+          
+        </div>
+        <div class = "covidContainer" id = "casesByCountyLineGraph">
+          
+        </div> -->
+
+
+
         <div class="row d-flex justify-content-center" style="padding-top: 75px;">
           <div class="col-md-6 col-sm-12">
             <!-- <img class = "Blog-Image" src="dmvCasesByCountyBar.png" alt="DMV Covid-19 Cases by County", style="padding-bottom: 10px;"> -->
@@ -63,6 +78,10 @@
             <iframe class="covidPlotly" src="dmvCasesByCountyLinePlotlyGraph.html" alt = "DMV Covid-19 Cases & Case Rate by County over time"></iframe>
           </div>
         </div>
+
+
+
+
         <!-- <div class="row d-flex justify-content-center" style="padding-top: 75px;">
           <div class="col-md-6 col-sm-12">
             <img class = "Blog-Image" src="dmvCasesByCountyLine.png" alt="DMV Covid-19 Cases by County over time", style="padding-bottom: 10px;">
@@ -71,11 +90,28 @@
             <img class = "Blog-Image" src="dmvCasesByCountyLinePerCap.png" alt="DMV Covid-19 Case Rate by County over time per 100k residents">
           </div>
         </div> -->
+
+
+
         <div class="row d-flex justify-content-center" style="padding-top: 50px;">
           <div class="col-sm-12">
           <p>Data on testing and deaths is only reported at the state level by the <a href="https://coronavirus.dc.gov/">DC Government</a>, the <a href="http://www.vdh.virginia.gov/coronavirus/">Virginia Department of Health</a>, and the <a href="https://coronavirus.maryland.gov/">Maryland Department of Health</a>.</p>
           </div>
         </div>
+
+
+
+
+        <!-- <div class = "covidContainer" id="dmvTestsByStateBarGraph">
+          
+        </div>
+        <div class = "covidContainer" id="dmvTestsByStateLineGraph">
+          
+        </div> -->
+
+
+
+
         <div class="row d-flex justify-content-center" style="padding-top: 75px;">
           <div class="col-md-6 col-sm-12">
             <!-- <img class = "Blog-Image" src="DMVTestsBar.png" alt="DMV Covid-19 Tests by State", style="padding-bottom: 10px;"> -->
@@ -86,6 +122,12 @@
             <iframe class="covidPlotly" src="dmvTestsByStateLinePlotlyGraph.html" alt = "DMV Covid-19 Tests & Test Rate by County over time"></iframe>
           </div>
         </div>
+        
+        
+        
+        
+        
+        
         <!-- <div class="row d-flex justify-content-center" style="padding-top: 75px;">
           <div class="col-md-6 col-sm-12">
             <img class = "Blog-Image" src="DMVTestsLine.png" alt="DMV Covid-19 Tests by State over time", style="padding-bottom: 10px;">
@@ -94,6 +136,19 @@
             <img class = "Blog-Image" src="DMVTestsLinePerCap.png" alt="DMV Covid-19 Test Rate by state over time per 100k residents">
           </div>
         </div> -->
+
+        <!-- <div class = "covidContainer" id="dmvDeathsByStateBarGraph">
+          
+        </div>
+        <div class = "covidContainer" id="dmvDeathsByStateLineGraph">
+          
+        </div>
+
+        <div class = "covidContainer" id="comingInTheAirTonight">
+
+        </div> -->
+
+
 
         <div class="row d-flex justify-content-center" style="padding-top: 75px;">
           <div class="col-md-6 col-sm-12">
@@ -105,6 +160,10 @@
             <iframe class="covidPlotly" src="dmvDeathsByStateLinePlotlyGraph.html" alt = "DMV Covid-19 Deaths & Death Rate by County over time"></iframe>
           </div>
         </div>
+
+
+
+
         <div class="row d-flex justify-content-center" style="padding-top: 50px;">
           <div class="col-sm-12">
           <p>Data behind this analysis can be found on my <a href="https://github.com/anesta95/DMV_Covid-19_Dashboard">Github</a>.</p>
@@ -117,6 +176,16 @@
 </div>
 </div>
 
+<!-- <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+  var pymParent = new pym.Parent('dmvChloroplethMap', 'dmvChloropleth.html', {});
+  var second = new pym.Parent('casesByCountyBarGraph', 'dmvCasesByCountyBarPlotlyGraph.html', {});
+  var third = new pym.Parent('casesByCountyLineGraph', 'dmvCasesByCountyLinePlotlyGraph.html', {});
+  var fourth = new pym.Parent('dmvTestsByStateBarGraph', 'dmvTestsByStateBarPlotlyGraph.html', {});
+  var fifth = new pym.Parent('dmvTestsByStateLineGraph', 'dmvTestsByStateLinePlotlyGraph.html', {});
+  var sixth = new pym.Parent('dmvDeathsByStateBarGraph', 'dmvDeathsByStateBarPlotlyGraph.html', {});
+  var seventh = new pym.Parent('dmvDeathsByStateLineGraph', 'dmvDeathsByStateLinePlotlyGraph.html', {});
+</script> -->
 <script src="allPages.js"></script>
 <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
