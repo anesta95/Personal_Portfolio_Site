@@ -359,10 +359,17 @@ iframe {
   margin-bottom: 75px;
 }
 
-/* .covidContainer {
-  max-height: 600px;
+.covidContainer {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-@viewport {
-  max-height: 4000px;
-} */
+.covidSectionHeader {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.covidSectionComment {
+  text-align: center;
+}
+
