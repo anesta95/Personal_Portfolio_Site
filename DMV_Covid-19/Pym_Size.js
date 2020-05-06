@@ -16,3 +16,5 @@ body.addEventListener("resize", plot_size_resize);
 window.onload = function() {
   this.setTimeout(this.plot_size_resize, 3000);
 };
+
+window.setTimeout(plot_size_resize, 3000);
