@@ -9,12 +9,13 @@ function plot_size_resize(e) {
   pymChild.sendHeight();
 }
 
+window.setTimeout(plot_size_resize, 3000);
+
 const body = document.querySelector('body');
 body.addEventListener("load", plot_size_load);
 body.addEventListener("resize", plot_size_resize);
 
 window.onload = function() {
-  this.setTimeout(this.plot_size_resize, 3000);
+  this.setTimeout(this.plot_size_resize, 6000);
 };
 
-window.setTimeout(plot_size_resize, 3000);
