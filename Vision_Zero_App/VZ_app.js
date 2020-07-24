@@ -86,7 +86,7 @@ async function getVZData(url) {
             if (feature.properties && feature.properties.USERTYPE && feature.properties.REQUESTDATE) {
                 layer.bindPopup(`<p>Submitted by: ${feature.properties.USERTYPE}</p>
                                  <p>Violation type: ${feature.properties.REQUESTTYPE}</p>
-                                 <p>Submitted date: ${formatDate(new Date(feature.properties.REQUESTDATE))}</p>`);
+                                 <p>Submitted date: ${formatDate(new Date(feature.properties.REQUESTDATE.replace("+00", "")))}</p>`);
             }
         }
 
