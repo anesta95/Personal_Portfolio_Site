@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Vision Zero App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+  </head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-md py-3">
+            <h1>Blog Post</h1>
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarDCbikes" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarDCbikes">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="../blog.html" class="btn btn-outline-link btn-lg active">Blog<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a href="../index.html" class="btn btn-outline-link btn-lg active">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../about.html" class="btn btn-outline-link btn-lg active">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../photos.html" class="btn btn-outline-link btn-lg active">Pictures</a>
+                </li>
+              </ul>
+            </div>
+      </nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-9 col-sm-12">
+                  <h1>DC Fatal Bike Crashes</h1>
+                  <h2 id="blog-post-subtitle">From 2010 to 2019</h2>
+                </div>
+              </div>
+              <div class="row d-flex justify-content-center" style="padding: 50px 50px;">
+                <div class="col-md-9 col-sm-12">
+                <p>One of the most widely-cited measurements that points to exactly how risky any certain activity might be the micromort.
+                  Concieved by former Stanford professor <a href="https://profiles.stanford.edu/ronald-howard">Ronald Howard</a>, the metric 
+                  provides a comparable number for any potentially dangerous activity that quantifies how lethal said action might be. Basically,
+                  one micromort is equivalent to about a 1 in 1 million chance of death when engaging in an actions ranging from ones traditionally
+                  thought of as risky such as scuba diving and skiing, to the more mundane such as walking and driving. 
+                </p>
+
+                <p>
+                  I often think of micromorts when biking around my home in Washington, DC either for leisure or, prior to Covid-19, to commute to work.
+                  According to Howard, traveling just 10 miles by bicycle is associated with <a href="https://archive.is/20120714164305/http://stanford-online.stanford.edu/sdrmda61w/session10b/slides/sld031.htm">an increase of one micromort</a>. 
+                  It might not sound like a lot, but biking is one of the riskiest forms of travel in the US with only traveling <a href="http://www.timesonline.co.uk/tol/comment/columnists/guest_contributors/article5696688.ece">6 miles in a motorcycle</a> 
+                  equaling one micromore being more perilous.
+                </p>
+
+                <p>
+                  As I've written about in a <a href = "../Vision_Zero_DC_Bikes/Vision_Zero_DC_Bikes.html">previous post</a>, the Vision Zero initative is a movement to 
+                  not accept as due course any traffic-related deaths and injuries, including cyclists. Starting in Sweden, governments all across the world have been 
+                  enacting concerted policies in an effort to achieve a transportation infrastrture that is not conducive to any dangerous or potentially lethal situations
+                  for any method of commuting. In DC, the city government adapted Vision Zero <a href="https://www.dcvisionzero.com/">in 2014</a> and has a goal of zero
+                  traffic fatalities by 2024. To that end, DC has adopted <a href="https://ddot.dc.gov/page/intersections-dual-turn-lanes">dual-turn lanes</a> at potentially
+                  <a href="https://ddot.dc.gov/node/1309236">high-risk</a> intersections and has also installed new protected bike lanes on <a href = "https://ddot.dc.gov/release/ddot-begins-construction-14th-street-nw-bus-lane-improvement-project">14th street by Columbia Heights</a> and 
+                  the <a href="https://parkviewdc.com/2020/05/04/update-on-the-irving-kenyon-crosstown-protect-bike-lane-project/">Irving Street exchange over North Capital street</a>.
+                  That being said, according to data from the <a href="https://opendata.dc.gov/datasets/crashes-in-dc">Open Data DC portal</a>, there have been at least 11 fatal bike crashes in the District in the last 10 years. Below 
+                  is a map with the location, date, ward, and story behind of each crash.
+                </p>
+              </div>
+              </div>
+
+              <div class="row d-flex justify-content-center" style="padding: 50px 50px;">
+                <div class="col-md-9 col-sm-12">
+                  <iframe title="DC Cyclist Crash Fatalities" aria-label="chart" id="datawrapper-chart-kiah0" src="https://datawrapper.dwcdn.net/kiah0/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="590"></iframe>
+                </div>
+              </div>
+              
+
+</div>
+</div>
+</div>
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-9 col-sm-12">
+    <div id="mapid" style="width: 50%; height: 600px; margin: auto;"></div>
+  </div>
+</div>
+
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+</html>
